@@ -1,0 +1,10 @@
+# POST method predict
+curl -d '[{"message": "Hola, soy Juan Manuel, no sé qué hacer chicos, no tengo hambre, no quiero engordar, ¿podríais ayudarme?"}]' \
+    -H "Content-Type: application/json" \
+    -X POST http://0.0.0.0:8000/predict
+
+# GET method info
+curl -X GET http://localhost:8000/info
+
+# GET method health
+curl -X GET http://localhost:8000/health
